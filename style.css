@@ -85,7 +85,7 @@
 }
 
 .typing-text {
-  width: 38ch;
+  width: 20ch;
   animation: typing 2s steps(20), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
