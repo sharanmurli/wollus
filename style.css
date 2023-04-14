@@ -1,0 +1,367 @@
+/*Font Styles*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@500&display=swap');
+/*Navigation Bar*/
+
+
+
+.navbar{
+    /*background-color: rgb(206, 204, 204);*/
+    background-color: #fff;
+    transition:500ms ease;
+ 
+
+  
+}
+
+
+.navbar.scrolled{
+  background:#f4bc32;
+}
+
+
+.navigation .navbar .navbar-nav .nav-item .nav-link{
+    color: #ae2908;
+   
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
+    margin: 20px;
+    padding: 5px;
+
+}
+.navigation .navbar .navbar-nav .nav-item .nav-link:hover{
+  background-color: #4c231c;
+  color: #fff;
+  border-radius: 10px;
+
+}
+
+
+
+  a.nav-link {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    border-radius: 10px;
+    display: inline-block;
+  
+    position: relative;
+  }
+  a.nav-link:after {    
+    background: none repeat scroll 0 0 transparent;
+    border-radius: 10px;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+/*Home Section*/
+
+.home-section{
+  background-image: url('images/wallpaper.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.home-text {
+  height: 100vh;
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+}
+
+.typing-text {
+  width: 38ch;
+  animation: typing 2s steps(20), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: 'Raleway';
+ background-color: rgba(0,0,0,.56);
+  font-size: 2em;
+  color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: 400;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+
+/*CTA section*/
+.cta-sec{
+  padding: 80px 0;
+  position: relative;
+}
+
+
+
+.cta-card{
+  padding-top: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+.cta-head{
+  font-family: 'Raleway';
+  color: #ae2908;
+  opacity: 0.7;
+  font-weight: 900;
+}
+.cta-card .card-nozoom:hover{
+  transform: scale(1.05);
+  box-shadow: 0 15px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  border-radius: 20px;
+}
+
+.cta-card .card-zoom{
+  transform: scale(1.05);
+  box-shadow: 0 15px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  border-radius: 20px;
+}
+
+.card-zoom i{
+  font-size: 64px;
+  padding: 10px;
+  color: #704c34;
+}
+
+.card-nozoom i{
+  font-size: 44px;
+  padding: 10px;
+  color: #704c34;
+}
+
+.cta-card .card .card-body .card-title{
+  font-family: 'Raleway';
+  font-weight: 900;
+}
+
+/*contact section*/
+
+/*cta*/
+
+.contact{
+ 
+  
+  background: linear-gradient(50deg, #4c231c,#704c34);
+  border-radius: 8px;
+}
+
+.contact-sec{
+  padding-top:60px ;
+  padding-bottom: 80px;
+ 
+
+}
+
+.contact-content{
+  padding-top: 30px;
+}
+
+.contact-head{
+  font-size: 18px;
+  color: #b57850;
+}
+
+.contact-title{
+  font-weight: 700;
+  font-size: 32px;
+  color: #fff;
+}
+
+.contact-desc{
+  font-size: 14px;
+  color: #d6d5e1;
+
+}
+
+.contact-list li{
+  display: inline-block;
+  padding: 20px ;
+  list-style: none;
+  color: #fff;
+}
+
+.contact-list li i{
+  color: #2a1100;
+}
+
+.contact-list{
+  padding-bottom: 50px;
+}
+
+
+.contact-btn{
+  margin: 10px auto 0;
+ 
+}
+.contact-btn a{
+  width: 150px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 12px 0;
+  color: #fff;
+  border: .5px solid #4c231c;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  background: #4c231c;
+  }
+.contact-btn a span{
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #4c231c;
+  z-index: -1;
+}
+.contact-btn a:hover span{
+  width: 100%;
+  background-color: #fff;
+}
+.contact-btn a:hover{
+  color: #4c231c;
+  text-decoration: none;
+  background-color: #fff;
+}
+
+
+div.semi-circle {
+  position: absolute;
+ 
+  transform: translate(-50%, -50%) ;
+  right: 100px;
+  margin-top: 20px;
+  height: 100px;
+  width: 200px;
+  border-radius: 0px 0px 150px 150px;
+  background-color: #ffb116;
+  z-index: 0;
+}
+
+div.semi-circle1 {
+  position: absolute;
+ 
+  transform: translate(-50%, -50%) ;
+  margin-left: 100px;
+  margin-top: 260px;
+  height: 100px;
+  width: 200px;
+  border-radius: 150px 150px 0px 0px ;
+  background-color: #021048;
+  z-index: 1;
+}
+
+@media (max-width: 1200px) {
+  div.semi-circle {
+    display: none;
+  }
+
+  div.semi-circle1{
+    display: none;
+
+  }
+}
+/*Footer Section*/
+
+.footer-section{
+  background-color: #704c34;
+  padding: 10px;
+}
+.footer-copy{
+  font-family: 'Raleway';
+  font-weight: 900;
+  color: #fff;
+}
+
+.footer-links{
+  
+
+
+ 
+	list-style-type: none;
+}
+
+.footer-links li {
+  display: inline-block;
+  margin: 10px;
+  font-family: 'Raleway';
+  font-weight: 700;
+  color: #fff;
+}
+
+.footer-links li a{
+  text-decoration: none;
+  color: white;
+
+}
+
+
+.footer-links li a:hover{
+  text-decoration: none;
+  color: #2a1100;
+
+}
+
+
+/*--------------------
+ Back to Top Button
+---------------------*/
+.scrollToTopBtn {
+  background-color: #4c231c;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 48px;
+  width: 48px;
+	  /* place it at the bottom right corner */
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+	  /* keep it on top of everything else */
+  z-index: 100;
+	  /* hide with opacity */
+  opacity: 0;
+	  /* also add a translate effect */
+  transform: translateY(100px);
+	  /* and a transition */
+  transition: all .5s ease
+}
+
+    
+.showBtn {
+  opacity: 1;
+  transform: translateY(0)
+}
+
